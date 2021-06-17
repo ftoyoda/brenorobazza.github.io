@@ -1,0 +1,162 @@
+a.button {
+  text-decoration: none;
+}
+
+button.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  button.button {
+    border: 2px solid currentcolor;
+  }
+}
+
+a.button,
+button.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #00afe7;
+  color: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  margin: 20px;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+
+a.button:hover,
+button.button:hover {
+  background-color: #008cb9;
+}
+
+a.button:focus,
+button.button:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  -webkit-box-shadow: 0 0 0 1px #04c2ff;
+          box-shadow: 0 0 0 1px #04c2ff;
+}
+
+a.button:hover, a.button:active,
+button.button:hover,
+button.button:active {
+  background-color: #008cb9;
+}
+
+a.button--small,
+button.button--small {
+  font-size: 1.15rem;
+}
+
+a.button--block,
+button.button--block {
+  width: 100%;
+}
+
+a.button--no-background,
+button.button--no-background {
+  border: none;
+  color: #303030;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a.button--no-background:focus,
+button.button--no-background:focus {
+  background-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a.button--no-background:hover, a.button--no-background:active,
+button.button--no-background:hover,
+button.button--no-background:active {
+  text-decoration: underline;
+  background: none;
+}
+
+a.button--outline,
+button.button--outline {
+  width: 20vw;
+  max-width: 200px;
+  border: solid 1px #303030;
+  color: #303030;
+  background-color: #00000000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a.button--outline:focus,
+button.button--outline:focus {
+  -webkit-box-shadow: 0 0 0 2px #454545;
+          box-shadow: 0 0 0 2px #454545;
+}
+
+a.button--outline:hover, a.button--outline:active,
+button.button--outline:hover,
+button.button--outline:active {
+  background-color: black;
+  color: white;
+}
+
+a.button--outline-blue,
+button.button--outline-blue {
+  border: solid 1px white;
+  color: white;
+  background-color: #00000000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a.button--outline-blue:focus,
+button.button--outline-blue:focus {
+  -webkit-box-shadow: 0 0 0 2px #454545;
+          box-shadow: 0 0 0 2px #454545;
+}
+
+a.button--outline-blue:hover, a.button--outline-blue:active,
+button.button--outline-blue:hover,
+button.button--outline-blue:active {
+  background-color: #00afe7;
+  border-color: #00afe7;
+  color: white;
+}
+
+a.button--no-margin,
+button.button--no-margin {
+  margin: 0px;
+}
+
+a.button--bold,
+button.button--bold {
+  font-weight: bolder;
+}
+
+a.button--margin-top,
+button.button--margin-top {
+  margin-top: 2em;
+}
+
+a.button--white-text,
+button.button--white-text {
+  color: white;
+}
+/*# sourceMappingURL=buttons.css.map */

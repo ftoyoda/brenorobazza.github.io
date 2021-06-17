@@ -1,0 +1,218 @@
+.navbar {
+  z-index: 10;
+  display: -ms-grid;
+  display: grid;
+  overflow: hidden;
+  top: 0;
+  padding: 10px 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  -webkit-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.navbar > img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.navbar div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.navbar div.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar a {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.navbar a.-no-decoration:hover {
+  text-decoration: underline;
+}
+
+.navbar--scrolled {
+  background-color: #fff !important;
+  -webkit-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+  color: #303030;
+}
+
+.navbar--scrolled > * > a.-no-decoration,
+.navbar--scrolled > * > a.button--no-background {
+  color: #303030 !important;
+}
+
+.navbar--scrolled > * > a.button--outline-blue {
+  color: white !important;
+  background-color: #00afe7;
+}
+
+.navbar--scrolled > * > a.button--outline-blue:hover {
+  background-color: #008cb9;
+}
+
+.navbar--light-background a {
+  text-align: center;
+  font-size: 16px;
+  color: #303030;
+}
+
+.navbar--light-background > *.row > a.button--no-background {
+  color: #303030;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1410px) {
+  .navbar {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .navbar {
+    -ms-grid-columns: 1fr 0.5fr 1fr;
+        grid-template-columns: 1fr 0.5fr 1fr;
+  }
+}
+
+.mobile-navbar {
+  z-index: 10;
+  overflow: hidden;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 1%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100vw;
+  background-color: transparent;
+  position: fixed;
+  -webkit-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.mobile-navbar div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 150px 150px;
+      grid-template-columns: 150px 150px;
+}
+
+.mobile-navbar a {
+  text-align: center;
+  color: white;
+}
+
+.mobile-navbar a.-no-decoration:hover {
+  text-decoration: underline;
+}
+
+.mobile-navbar--scrolled {
+  background-color: #fff !important;
+  -webkit-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+  color: #303030;
+}
+
+.mobile-navbar--scrolled > * > a.-no-decoration,
+.mobile-navbar--scrolled > * > a.button--no-background {
+  color: #303030 !important;
+}
+
+.mobile-navbar--scrolled > * > a.button--outline-blue {
+  color: white !important;
+  background-color: #00afe7;
+}
+
+.mobile-navbar--scrolled > * > a.button--outline-blue:hover {
+  background-color: #008cb9;
+}
+
+.mobile-navbar--light-background a {
+  text-align: center;
+  color: #303030;
+}
+
+.nav-button-container {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #mobile-navbar {
+    visibility: visible;
+  }
+  #navbar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #mobile-navbar {
+    visibility: hidden;
+  }
+  #navbar {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #nav-button {
+    font-size: 16px;
+    padding: 1px 1px;
+  }
+}
+
+.hamburger-menu-div {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 5.5px 0;
+}
+
+.hamburger-menu-div--white-background {
+  background-color: #303030;
+}
+
+.hamburger-menu-div--dark {
+  background-color: #303030;
+}
+/*# sourceMappingURL=navbar.css.map */

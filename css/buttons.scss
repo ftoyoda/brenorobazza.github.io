@@ -1,0 +1,131 @@
+$btnColor: #00afe7;
+$darkContrast: #303030;
+
+a.button {
+  text-decoration: none;
+}
+
+button.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+}
+
+a.button,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $btnColor;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  margin: 20px;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: scale-color($btnColor, $lightness: -20%);
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 1px scale-color($btnColor, $lightness: +10%);
+  }
+
+  &:hover,
+  &:active {
+    background-color: scale-color($btnColor, $lightness: -20%);
+  }
+
+  &--small {
+    font-size: 1.15rem;
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  &--no-background {
+    border: none;
+    color: $darkContrast;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &--no-background:focus {
+    background-color: none;
+    box-shadow: none;
+  }
+
+  &--no-background:hover,
+  &--no-background:active {
+    // color: $btnColor;
+    text-decoration: underline;
+    background: none;
+  }
+
+  &--outline {
+    width: 20vw;
+    max-width: 200px;
+    border: solid 1px $darkContrast;
+    color: $darkContrast;
+    background-color: #00000000;
+    box-shadow: none;
+  }
+
+  &--outline:focus {
+    box-shadow: 0 0 0 2px scale-color($darkContrast, $lightness: +10%);
+  }
+
+  &--outline:hover,
+  &--outline:active {
+    background-color: black;
+    color: white;
+  }
+
+  &--outline-blue {
+    border: solid 1px white;
+    color: white;
+    background-color: #00000000;
+    box-shadow: none;
+  }
+
+  &--outline-blue:focus {
+    box-shadow: 0 0 0 2px scale-color($darkContrast, $lightness: +10%);
+  }
+
+  &--outline-blue:hover,
+  &--outline-blue:active {
+    background-color: $btnColor;
+    border-color: $btnColor;
+    color: white;
+  }
+
+  &--no-margin {
+    margin: 0px;
+  }
+
+  &--bold {
+    font-weight: bolder;
+  }
+
+  &--margin-top {
+    margin-top: 2em;
+  }
+
+  &--white-text {
+      color: white;
+  }
+}

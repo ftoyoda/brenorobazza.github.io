@@ -1,0 +1,192 @@
+$btnColor: #00afe7;
+$darkContrast: #303030;
+
+.navbar {
+  z-index: 10;
+  display: grid;
+  overflow: hidden;
+  top: 0;
+  padding: 10px 5%;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  > img {
+    align-self: center;
+    justify-self: center;
+  }
+
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  transition: background-color 100ms linear;
+
+  div {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  div.logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+  }
+
+  a.-no-decoration:hover {
+    text-decoration: underline;
+  }
+
+  &--scrolled {
+    background-color: #fff !important;
+    transition: background-color 100ms linear;
+    color: $darkContrast;
+  }
+  &--scrolled > * > a.-no-decoration,
+  &--scrolled > * > a.button--no-background {
+    color: $darkContrast !important;
+  }
+
+  &--scrolled > * > a.button--outline-blue {
+    color: white !important;
+    background-color: $btnColor;
+
+    &:hover {
+      background-color: scale-color($btnColor, $lightness: -20%);
+    }
+  }
+
+  &--light-background {
+    a {
+      text-align: center;
+      font-size: 16px;
+      color: $darkContrast;
+    }
+
+    > *.row >a.button--no-background {
+      color: $darkContrast;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .navbar {
+    grid-template-columns: 1fr 0.5fr 1fr;
+  }
+}
+
+.mobile-navbar {
+  z-index: 10;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 1%;
+  align-content: center;
+
+  width: 100vw;
+  background-color: transparent;
+  position: fixed;
+  transition: background-color 100ms linear;
+
+  div {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 150px 150px;
+  }
+
+  a {
+    text-align: center;
+    color: white;
+  }
+
+  a.-no-decoration:hover {
+    text-decoration: underline;
+  }
+
+  &--scrolled {
+    background-color: #fff !important;
+    transition: background-color 100ms linear;
+    color: $darkContrast;
+  }
+  &--scrolled > * > a.-no-decoration,
+  &--scrolled > * > a.button--no-background {
+    color: $darkContrast !important;
+  }
+
+  &--scrolled > * > a.button--outline-blue {
+    color: white !important;
+    background-color: $btnColor;
+
+    &:hover {
+      background-color: scale-color($btnColor, $lightness: -20%);
+    }
+  }
+
+  &--light-background {
+    a {
+      text-align: center;
+      color: $darkContrast;
+    }
+  }
+}
+
+.nav-button-container {
+  width: 100%;
+  // border: solid 1px red;
+}
+
+@media screen and (max-width: 800px) {
+  #mobile-navbar {
+    visibility: visible;
+  }
+  #navbar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #mobile-navbar {
+    visibility: hidden;
+  }
+  #navbar {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #nav-button {
+    font-size: 16px;
+    padding: 1px 1px;
+  }
+}
+
+
+.hamburger-menu-div {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 5.5px 0;
+
+  &--white-background {
+    background-color: $darkContrast;
+  }
+
+  &--dark {
+    background-color: $darkContrast;
+  }
+}
