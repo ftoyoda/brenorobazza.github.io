@@ -11,8 +11,8 @@ function navigation_dark_background() {
   
   let hamburger_menu = document.getElementsByClassName("hamburger-menu-div")
  
-  nav_logo.src="images/Logo_Aion.png"
-  logo_mobile.src="images/Logo_Aion.png"
+  nav_logo.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png"
+  logo_mobile.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png"
   hamburger_menu[0].classList.remove('hamburger-menu-div--white-background') 
   hamburger_menu[1].classList.remove('hamburger-menu-div--white-background') 
   hamburger_menu[2].classList.remove('hamburger-menu-div--white-background') 
@@ -26,8 +26,8 @@ function navigation_light_background() {
   
   let hamburger_menu = document.getElementsByClassName("hamburger-menu-div")
   
-  nav_logo.src="images/Logo_Aion_black.png"
-  logo_mobile.src="images/Logo_Aion_black.png"
+  nav_logo.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png"
+  logo_mobile.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png"
   hamburger_menu[0].classList.add('hamburger-menu-div--white-background') 
   hamburger_menu[1].classList.add('hamburger-menu-div--white-background') 
   hamburger_menu[2].classList.add('hamburger-menu-div--white-background') 
@@ -86,11 +86,11 @@ function switchMenu() {
 
     swap_header_color(lastKnownScrollPosition);
     if (window.location.pathname == '/about_us.html') {
-      nav_logo_mobile.src="images/Logo_Aion_black.png"
+      nav_logo_mobile.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png"
     }
 
     else { 
-      nav_logo_mobile.src="images/Logo_Aion.png"
+      nav_logo_mobile.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png"
     }
 
     menu_is_open = false
