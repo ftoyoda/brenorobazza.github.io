@@ -33,6 +33,10 @@ img {
 
 .-spacing-top {
   margin: 3.5rem 0 0 0;
+
+  &--small {
+    margin: 1rem 0 0 0;
+  }
 }
 
 hr {
@@ -142,6 +146,10 @@ section {
   &--large {
     font-size: 1.4rem;
     line-height: 2rem;
+  }
+
+  &--no-margin {
+    margin: 0px;
   }
 }
 
@@ -254,6 +262,7 @@ section {
   &--padding-bottom {
     padding: 0px 0px 16px 0px;
   }
+
 }
 
 @media screen and (min-width: 800px) {

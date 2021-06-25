@@ -34,6 +34,10 @@ img {
   margin: 3.5rem 0 0 0;
 }
 
+.-spacing-top--small {
+  margin: 1rem 0 0 0;
+}
+
 hr {
   background: #2f3034 none repeat scroll 0% 0%;
   border: 0px none;
@@ -142,6 +146,10 @@ section {
 .text--large {
   font-size: 1.4rem;
   line-height: 2rem;
+}
+
+.text--no-margin {
+  margin: 0px;
 }
 
 .grid-row {
@@ -577,4 +585,4 @@ section {
   max-height: 25px;
   aspect-ratio: 1;
 }
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=aionsolution_home_style.css.map */
