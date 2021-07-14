@@ -1,0 +1,22 @@
+Trocar fundo azul da primeira dobra
+
+1ª Dobra
+trocar "Entrar em contato" pelo "Saiba Mais"
+
+
+2ª drobra
+header: "O que os clientes falam sobre nós"
+
+
+3ª Dobra: 
+	"Empresas com as quais trabalhamos"
+	vtex em primeiro
+	Logo da Rede, Stone, Unlimint, ClearSale, Mercado Livre, B2W, mundiPag, Konduto, Pagseguro, Systextil, Gestão 4.0
+
+4ª Jogar time de peso para o fundo com o título "Nossa equipe":
+	Ao invés do Kibe, deixar texto do Gustao e do Vitão
+5º adicionar bloco com logos dos clientes (15 logos) antes do bloco de formulário e depois dos módulos
+
+---------------------------
+página de FAQ
+james tip

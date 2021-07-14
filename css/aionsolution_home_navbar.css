@@ -59,34 +59,38 @@
   text-decoration: underline;
 }
 
-.navbar--scrolled {
+.navbar--white {
   background-color: #fff !important;
   -webkit-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
   color: #303030;
 }
 
-.navbar--scrolled > * > a.-no-decoration,
-.navbar--scrolled > * > a.button--no-background {
+.navbar--white > * > a.-no-decoration,
+.navbar--white > * > a.button--no-background {
   color: #303030 !important;
 }
 
-.navbar--scrolled > * > a.button--outline-blue {
+.navbar--white > * > a.button--outline-blue {
   color: white !important;
   background-color: #00afe7;
 }
 
-.navbar--scrolled > * > a.button--outline-blue:hover {
+.navbar--white > * > a.button--outline-blue:hover {
   background-color: #008cb9;
 }
 
-.navbar--light-background a {
+.navbar--transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar--transparent a {
   text-align: center;
   font-size: 16px;
   color: #303030;
 }
 
-.navbar--light-background > *.row > a.button--no-background {
+.navbar--transparent > *.row > a.button--no-background {
   color: #303030;
   font-size: 16px;
 }
@@ -146,30 +150,40 @@
   text-decoration: underline;
 }
 
-.mobile-navbar--scrolled {
+.mobile-navbar--white {
   background-color: #fff !important;
   -webkit-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
   color: #303030;
 }
 
-.mobile-navbar--scrolled > * > a.-no-decoration,
-.mobile-navbar--scrolled > * > a.button--no-background {
+.mobile-navbar--white > * > a.-no-decoration,
+.mobile-navbar--white > * > a.button--no-background {
   color: #303030 !important;
 }
 
-.mobile-navbar--scrolled > * > a.button--outline-blue {
+.mobile-navbar--white > * > a.button--outline-blue {
   color: white !important;
   background-color: #00afe7;
 }
 
-.mobile-navbar--scrolled > * > a.button--outline-blue:hover {
+.mobile-navbar--white > * > a.button--outline-blue:hover {
   background-color: #008cb9;
 }
 
-.mobile-navbar--light-background a {
+.mobile-navbar--transparent {
+  background-color: rgba(0, 0, 0, 0);
+  color: #303030;
+}
+
+.mobile-navbar--transparent--black-text a {
   text-align: center;
   color: #303030;
+}
+
+.mobile-navbar--transparent--white-text a {
+  text-align: center;
+  color: white;
 }
 
 .nav-button-container {
@@ -208,11 +222,7 @@
   margin: 5.5px 0;
 }
 
-.hamburger-menu-div--white-background {
-  background-color: #303030;
-}
-
 .hamburger-menu-div--dark {
   background-color: #303030;
 }
-/*# sourceMappingURL=navbar.css.map */
+/*# sourceMappingURL=aionsolution_home_navbar.css.map */
