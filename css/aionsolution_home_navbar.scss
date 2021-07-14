@@ -43,17 +43,17 @@ $darkContrast: #303030;
     text-decoration: underline;
   }
 
-  &--scrolled {
+  &--white {
     background-color: #fff !important;
     transition: background-color 100ms linear;
     color: $darkContrast;
   }
-  &--scrolled > * > a.-no-decoration,
-  &--scrolled > * > a.button--no-background {
+  &--white > * > a.-no-decoration,
+  &--white > * > a.button--no-background {
     color: $darkContrast !important;
   }
 
-  &--scrolled > * > a.button--outline-blue {
+  &--white > * > a.button--outline-blue {
     color: white !important;
     background-color: $btnColor;
 
@@ -62,7 +62,8 @@ $darkContrast: #303030;
     }
   }
 
-  &--light-background {
+  &--transparent {
+    background-color: rgba(0,0,0,0);
     a {
       text-align: center;
       font-size: 16px;
@@ -118,17 +119,17 @@ $darkContrast: #303030;
     text-decoration: underline;
   }
 
-  &--scrolled {
+  &--white {
     background-color: #fff !important;
     transition: background-color 100ms linear;
     color: $darkContrast;
   }
-  &--scrolled > * > a.-no-decoration,
-  &--scrolled > * > a.button--no-background {
+  &--white > * > a.-no-decoration,
+  &--white > * > a.button--no-background {
     color: $darkContrast !important;
   }
 
-  &--scrolled > * > a.button--outline-blue {
+  &--white > * > a.button--outline-blue {
     color: white !important;
     background-color: $btnColor;
 
@@ -137,11 +138,20 @@ $darkContrast: #303030;
     }
   }
 
-  &--light-background {
-    a {
+  &--transparent {
+    background-color: rgba(0,0,0, 0);
+    color: $darkContrast;
+
+    &--black-text a {
       text-align: center;
       color: $darkContrast;
     }
+
+    &--white-text a {
+      text-align: center;
+      color: white;
+    }
+    
   }
 }
 
@@ -181,10 +191,6 @@ $darkContrast: #303030;
   height: 2px;
   background-color: white;
   margin: 5.5px 0;
-
-  &--white-background {
-    background-color: $darkContrast;
-  }
 
   &--dark {
     background-color: $darkContrast;

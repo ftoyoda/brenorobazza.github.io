@@ -1,107 +1,104 @@
-
 let lastKnownScrollPosition = 0;
 let ticking = false;
 let menu_is_open = false;
 
 
-function navigation_dark_background() {
-  
-  let nav_logo = document.getElementById("nav-logo")
-  let logo_mobile = document.getElementById("mobile-nav-logo")
-  
-  let hamburger_menu = document.getElementsByClassName("hamburger-menu-div")
- 
-  nav_logo.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png"
-  logo_mobile.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png"
-  hamburger_menu[0].classList.remove('hamburger-menu-div--white-background') 
-  hamburger_menu[1].classList.remove('hamburger-menu-div--white-background') 
-  hamburger_menu[2].classList.remove('hamburger-menu-div--white-background') 
-  
-}
+document.addEventListener("scroll", function (e) {
+  lastKnownScrollPosition = window.scrollY;
 
-function navigation_light_background() {
-  
-  let nav_logo = document.getElementById("nav-logo")
-  let logo_mobile = document.getElementById("mobile-nav-logo")
-  
-  let hamburger_menu = document.getElementsByClassName("hamburger-menu-div")
-  
-  nav_logo.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png"
-  logo_mobile.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png"
-  hamburger_menu[0].classList.add('hamburger-menu-div--white-background') 
-  hamburger_menu[1].classList.add('hamburger-menu-div--white-background') 
-  hamburger_menu[2].classList.add('hamburger-menu-div--white-background') 
-}
+  if (!ticking) {
+    window.requestAnimationFrame(function () {
+      swap_header_color(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
 
 
+function set_navigation_bar_color(background_color, content_color, link_color='black') {
+  let logo_desktop = document.getElementById("nav-logo");
+  let logo_mobile = document.getElementById("mobile-nav-logo");
+  let hamburger_menu = document.getElementsByClassName("hamburger-menu-div");
+  let navbar_desktop = document.getElementById("navbar");
+  let navbar_mobile = document.getElementById("mobile-navbar");
 
-function swap_header_color(scrollPos) {
-  let navbar = document.getElementById("navbar")
-  let navbar__mobile = document.getElementById('mobile-navbar')
-  if (!menu_is_open) {
+  if (background_color === "transparent") {
+    navbar_desktop.classList.add("navbar--transparent" + "--" + link_color + "-text");
+    navbar_mobile.classList.add("navbar--transparent");
 
-  if (scrollPos == 0) {
-    
-    navbar.classList.remove('navbar--scrolled')
-    navbar__mobile.classList.remove("mobile-navbar--scrolled");
-    
-    if (window.location.pathname == '/about_us.html') {
-      navigation_light_background()
-    }
-    else {
-         navigation_dark_background()
-        }
-      }
-      
-      else if (scrollPos !== 0) {
-        navbar.classList.add("navbar--scrolled");
-        navbar__mobile.classList.add("mobile-navbar--scrolled");
-        navigation_light_background()
-      }
+    navbar_desktop.classList.remove("navbar--white");
+    navbar_mobile.classList.remove("navbar--white");
   }
 
-};
+  else if (background_color === 'white') {
+    navbar_desktop.classList.remove("navbar--transparent" + "--" + link_color + "-text");
+    navbar_mobile.classList.remove("navbar--transparent");
 
-document.addEventListener('scroll', function(e) {
-    lastKnownScrollPosition = window.scrollY;
-  
-    if (!ticking) {
-      window.requestAnimationFrame(function() {
-        swap_header_color(lastKnownScrollPosition);
-        ticking = false;
-      });
-  
-      ticking = true;
+    navbar_desktop.classList.add("navbar--white");
+    navbar_mobile.classList.add("navbar--white");
+  }
+
+  if (content_color === 'black') {
+    logo_desktop.src = "https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png";
+    logo_mobile.src = "https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png";
+    hamburger_menu[0].classList.add("hamburger-menu-div--dark");
+    hamburger_menu[1].classList.add("hamburger-menu-div--dark");
+    hamburger_menu[2].classList.add("hamburger-menu-div--dark");
+  } 
+
+  else if (content_color == 'white') {
+    logo_desktop.src = "https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png";
+    logo_mobile.src = "https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png";
+    hamburger_menu[0].classList.remove("hamburger-menu-div--dark");
+    hamburger_menu[1].classList.remove("hamburger-menu-div--dark");
+    hamburger_menu[2].classList.remove("hamburger-menu-div--dark");
+  }
+}
+
+function swap_header_color(scrollPos) {
+
+  if (menu_is_open) {
+    return
+  }
+
+  // Se for na about_us, sempre será com o conteúdo preto
+  if (window.location.href.includes("de58f908-d2ce-4fa9-b979-e66d998cf013") || window.location.href.includes("/sobre-nos")) {
+    if (scrollPos === 0) {
+      set_navigation_bar_color('transparent', 'black', 'black')
     }
+    else {
+      set_navigation_bar_color('white', 'black', 'black')
+    }
+  }
 
-  });
+  // Se for na Home, dependerá da posição do scroll
+  else {
+    if (scrollPos === 0) {
+      set_navigation_bar_color('transparent', 'white', 'white')
+    }
+    else {
+      set_navigation_bar_color('white', 'black', 'black')
+    }
+  }
+}
+
 
 function switchMenu() {
-  let open_menu = document.getElementById("mobile-menu")
-  let nav_logo_mobile = document.getElementById("mobile-nav-logo")
+  let open_menu = document.getElementById("mobile-menu");
 
   // Close menu
   if (menu_is_open) {
-    open_menu.classList.remove('mobile-menu--visible')
-
+    menu_is_open = false;
     swap_header_color(lastKnownScrollPosition);
-    if (window.location.pathname == '/about_us.html') {
-      nav_logo_mobile.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png"
-    }
-
-    else { 
-      nav_logo_mobile.src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png"
-    }
-
-    menu_is_open = false
+    open_menu.classList.remove("mobile-menu--visible");
   }
-  
+
   // Open menu
   else {
-    open_menu.classList.add('mobile-menu--visible')
     menu_is_open = true;
-    // navigation_dark_background();
-    swap_header_color(lastKnownScrollPosition);
+    open_menu.classList.add("mobile-menu--visible");
+    set_navigation_bar_color('white', 'black')
   }
-
 }

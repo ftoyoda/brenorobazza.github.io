@@ -1,14 +1,22 @@
-<html lang="en">
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style2.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/buttons.css" />
-    <link rel="stylesheet" href="css/mobile-menu.css" />
-    <script type="text/javascript" src="index.js"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_style.css" />
+    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_navbar.css" />
+    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_buttons.css" />
+    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_mobile_menu.css" />
+    <script type="text/javascript" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_index.js"></script> -->
+
+    <link rel="stylesheet" href="css/aionsolution_home_style.css" />
+    <link rel="stylesheet" href="css/aionsolution_home_navbar.css" />
+    <link rel="stylesheet" href="css/aionsolution_home_buttons.css" />
+    <link rel="stylesheet" href="css/aionsolution_home_mobile_menu.css" />
+    <script type="text/javascript" src="aionsolution_home_index.js"></script>
     <title>Aion Solution | Sobre Nós</title>
 </head>
 
@@ -16,60 +24,63 @@
     <div id="mobile-menu" class="mobile-menu">
         <ul class="mobile-menu-list">
             <li>
-                <a class="mobile-menu-link" href="/index.html">
+                <a class="mobile-menu-link" href="/">
                     Home
                 </a>
             </li>
-            <hr>
+            <hr/>
             <li>
-                <a class="mobile-menu-link" href="/about_us.html">
+                <a class="mobile-menu-link" href="#">
                     Sobre nós
                 </a>
             </li>
-            <hr>
-            <li>
+            <hr/>
+            <!-- <li>
                 <a class="mobile-menu-link" href="#">
                     Blog
                 </a>
-            </li>
-            <hr>
+            </li> -->
+            <hr/>
             <li>
-                <a onclick="switchMenu()" class="mobile-menu-link" href="#contact_us">
+                <a onclick="switchMenu()" class="mobile-menu-link" href="/#contact_us">
                     Contato
                 </a>
             </li>
         </ul>
     </div>
 
-    <div id="navbar" class="navbar navbar--light-background">
+    <div id="navbar" class="navbar navbar--transparent">
         <div class="row">
-            <a class="-no-decoration" href="about_us.html">
+            <a class="-no-decoration" href="">
+                Home
+            </a>
+            <a class="-no-decoration" href="/sobre-nos">
                 Quem Somos
             </a>
-            <a class="-no-decoration" href="">
+            <!-- <a class="-no-decoration" href="#">
                 Blog
-            </a>
+            </a> -->
         </div>
 
         <div class="logo-container">
-            <a href="/index.html">
-                <img id="nav-logo" class="footer-logo" src="images/Logo_Aion_black.png" alt="" />
+            <a href="/">
+                <img id="nav-logo" class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png" alt="" />
             </a>
         </div>
 
         <div class="row">
             <a href="https://app.aionsolution.com.br/" class="button button--block button--no-background button--no-margin button--white-text">Login</a>
-            <a id="nav-button" href="/index.html#contact_us" class="button button--block button--no-margin button--outline">Entrar em contato</a>
+            <a id="nav-button" href="/#contact_us" class="button button--block button--no-margin button--outline">Entrar em contato</a>
         </div>
     </div>
 
-    <div id="mobile-navbar" class="mobile-navbar mobile-navbar--light-background">
+    <div id="mobile-navbar" class="mobile-navbar mobile-navbar--transparent">
         <div>
 
         </div>
 
-        <a href="index.html">
-            <img id="mobile-nav-logo" class="footer-logo" src="images/Logo_Aion_black.png" alt="" />
+        <a href="/">
+            <img id="mobile-nav-logo" class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png" alt="" />
         </a>
 
         <div>
@@ -83,7 +94,7 @@
 
 
     <header class="beige-background">
-        <div id="first-fold" class="grid-container grid-container--vcenter">
+        <div id="first-fold-small" class="grid-container grid-container--vcenter">
             <div class="primary-title-container primary-title-container--medium">
                 <h1 class="primary-title primary-title--align-center primary-title--medium primary-title--dark ">
                     Nós ajudamos você a dominar o seu ecommerce
@@ -97,39 +108,39 @@
             <div class="grid-container">
                 <p>
                     Um time de engenheiros da Universidade de São Paulo (USP), Universidade Estadual de Campinas (Unicamp) e Instituto Tecnológico da Aeronáutica (ITA).
-                    <br>
-                    <br>
+                    <br/>
+                    <br/>
                     Em 2013 os engenheiros Gustavo Martins e Victor Meireles passaram a fazer parte da gestão executiva do e-commerce Kanui, como CFO (Chief Financial Officer) e Head de BI (Business Intelligence) da empresa, respectivamente.
-                    <br>
-                    <br>
-                    Em agosto/2014 a Kanui, que pertencia ao fundo investidor alemão Rocket Internet, foi a primeira startup de moda a atingir breakeven de EBITDA, resultado este auditado pela auditoria Ernst & Young. Um feito e tanto, considerando que as maiores concorrentes à época, como Netshoes e Dafiti, estavam longe disso.
-                    <br>
-                    <br>
+                    <br/>
+                    <br/>
+                    Em agosto/2014 a Kanui, que pertencia ao fundo investidor alemão Rocket Internet, foi a primeira startup de moda a atingir breakeven de EBITDA, resultado este auditado pela auditoria Ernst &amp; Young. Um feito e tanto, considerando que as maiores concorrentes à época, como Netshoes e Dafiti, estavam longe disso.
+                    <br/>
+                    <br/>
                     Com o sucesso, em meados de 2015, os investidores uniram o management team da Kanui com o da Dafiti, com o objetivo de rentabilizar a operação da Dafiti. No Grupo Dafiti, Gustavo e Victor lideraram com sucesso as áreas de Planejamento Estratégico e Financeiro, Precificação e BI comercial para América Latina. E os resultados logo começaram a aparecer. No último trimestre de 2016 a operação Brasil, a maior das 4 unidades LatAm da Dafiti, já operou no positivo, gerando lucro. Em 2017 a Dafiti Brasil cresceu 17% em receitas e fechou o ano fiscal com Ebitda positivo, resultado auditado. Fonte: https://exame.com/negocios/dafiti-tem-resultado-operacional-positivo-pela-primeira-vez/
-                    <br>
-                    <br>
+                    <br/>
+                    <br/>
                     Em 2019 nasce a Aion. Ano de muito trabalho para o time da empresa, que focou em criar um sistema inteligente de gestão completa de e-commerce, voltado para empresas que queiram estruturar ou potencializar o seu comércio eletrônico.
-                    <br>
-                    <br>
+                    <br/>
+                    <br/>
                     Nos primeiros meses de 2020 os resultados impressionantes já começaram a aparecer. Crescimento exponencial no primeiro cliente sem gerar cashburn (queima de caixa), 8 sites já usando o Aion, dezenas de empresas se interessando pelo serviço e software Aion.
-                    <br>
-                    <br>
+                    <br/>
+                    <br/>
                     Com a crise gerada pela pandemia do novo coronavírus, estamos vivendo uma nova era. A era da inteligência artificial e automatização. Nossa visão é clara: entregar a nossos clientes um software prático e inteligente que otimize o crescimento e o lucro do negócio deles.
                 </p>
             </div>
         </section>
 
-        <hr>
+        <hr/>
         <section>
             <div class="grid-container">
                 <div id="footer-image-container">
-                    <img class="footer-logo" src="images/Logo_Aion_black.png" alt="">
+                    <img class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png" alt=""/>
                 </div>
                 <div id="footer-links-container">
                     <hX>EMRPESA</hX>
                     <ul>
                         <li>
-                            <a class="-no-decoration" href="/about_us.html">
+                            <a class="-no-decoration" href="/sobre-nos">
                                 Quem Somos
                             </a>
                         </li>
@@ -138,22 +149,22 @@
                                 Módulos
                             </a>
                         </li> -->
-                        <li>
+                        <!-- <li>
                             <a class="-no-decoration" href="#">
                                 Blog
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
-            <hr>
+            <hr/>
             <div class="grid-container">
                 <div class="social-media-container">
                     <a href="https://www.instagram.com/aionsolution/">
-                        <img class="social-media-logos" src="images/instagram.png" alt="Instagram">
+                        <img class="social-media-logos" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_instagram.png" alt="Instagram"/>
                     </a>
                     <a href="https://www.linkedin.com/company/aionsolution/">
-                        <img class="social-media-logos" src="images/linkedin.png" alt="">
+                        <img class="social-media-logos" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_linkedin.png" alt=""/>
                     </a>
                 </div>
             </div>

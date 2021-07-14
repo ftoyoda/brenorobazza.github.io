@@ -1,21 +1,29 @@
-<html lang="pt-BR">
+<!-- 
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_style.css" />
-    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_navbar.css" />
-    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_buttons.css" />
-    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_mobile_menu.css" />
-    <script type="text/javascript" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_index.js"></script>
+    <!-- <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_style.css" />
+     <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_navbar.css" />
+     <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_buttons.css" />
+     <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_mobile_menu.css" />
+     <script type="text/javascript" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_index.js"></script> -->
 
-    <!-- <link rel="stylesheet" href="css/aionsolution_home_style.css" />
+    <link rel="stylesheet" href="css/aionsolution_home_style.css" />
     <link rel="stylesheet" href="css/aionsolution_home_navbar.css" />
     <link rel="stylesheet" href="css/aionsolution_home_buttons.css" />
     <link rel="stylesheet" href="css/aionsolution_home_mobile_menu.css" />
-    <script type="text/javascript" src="aionsolution_home_index.js"></script> -->
+    <script type="text/javascript" src="aionsolution_home_index.js"></script>
     <title>Aion Solution</title>
+
 </head>
 
 <body>
@@ -26,19 +34,19 @@
                     Home
                 </a>
             </li>
-            <hr/>
+            <hr />
             <li>
-                <a class="mobile-menu-link" href="/about_us.html">
+                <a class="mobile-menu-link" href="/sobre-nos">
                     Sobre nós
                 </a>
             </li>
-            <hr/>
-            <li>
-                <a class="mobile-menu-link" href="#">
-                    Blog
-                </a>
-            </li>
-            <hr/>
+            <hr />
+            <!-- <li>
+                 <a class="mobile-menu-link" href="#">
+                     Blog
+                 </a>
+             </li> -->
+            <hr />
             <li>
                 <a onclick="switchMenu()" class="mobile-menu-link" href="#contact_us">
                     Contato
@@ -49,12 +57,15 @@
 
     <div id="navbar" class="navbar">
         <div class="row">
-            <a class="-no-decoration" href="/about_us.html">
+            <a class="-no-decoration" href="">
+                Home
+            </a>
+            <a class="-no-decoration" href="/sobre-nos">
                 Quem Somos
             </a>
-            <a class="-no-decoration" href="">
-                Blog
-            </a>
+            <!-- <a class="-no-decoration" href="">
+                 Blog
+             </a> -->
         </div>
 
         <div class="logo-container">
@@ -74,7 +85,7 @@
 
         </div>
 
-        <a href="index.html">
+        <a href="/?lid=0b6d5d08-7734-4af3-b006-e94e95404ac6">
             <img id="mobile-nav-logo" class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png" alt="" />
         </a>
 
@@ -90,15 +101,15 @@
     <header class="dark-background">
         <div id="first-fold" class="grid-container grid-container--vcenter">
             <div class="primary-title-container">
-                <h1 class="primary-title">Aumente suas vendas.<br/>Otimize seu ecommerce.</h1>
-                <span class="text text--white">Aumente seus resultados de marketing por meio de uma ferramenta que unifica a precificação dos produtos, a construção de campanhas e o planejamento de estoque.
-                </span><br/>
-                <a href="#contact_us" class="button button--no-margin button--margin-top ">
-                    Entrar em contato
+                <h1 class="primary-title">Bombe as vendas do seu e-commerce.<br />Com foco no lucro.</h1>
+                <span class="text text--white">Otimize seu lucro e sua geração de caixa por meio de total controle de marketing digital, precificação dinâmica dos produtos, campanhas inteligentes e de um modelo de controle de estoque já consagrado em enormes e-commerces da América Latina.
+                </span><br />
+                <a href="#testimonials" class="button button--no-margin button--margin-top ">
+                    Saiba Mais
                 </a>
             </div>
             <div class="header-image-container">
-                <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_home_banner.png?v=yay" alt=""/>
+                <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_home_banner.png?v=yay" alt="" />
             </div>
         </div>
     </header>
@@ -106,52 +117,43 @@
     <main>
 
         <!-- Testimonials -->
-        <section>
+        <section id="testimonials">
             <div class="grid-container">
-                <h2 class="section-title">Não fique refém da sua agência de Marketing Digital</h2>
+                <h2 class="section-title">O que nossos clientes falam sobre nós</h2>
             </div>
             <div class="grid-container">
                 <div class="testimonial">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quas sed accusantium deserunt
-                        temporibus, et facere quibusdam illo suscipit deleniti eaque mollitia ratione voluptate, saepe
-                        autem dignissimos quae id at culpa porro? A error reiciendis dolores cum consequuntur dicta
-                        quisquam?
+                        Desde que passamos a trabalhar com o software Aion, tivemos um aumento exponencial de nossas receitas online, com constante evolução no lucro. Vejo ambos como reflexo da metodologia de trabalho implementada. O Aion foca na medição e controle de tudo e alinha as áreas de marketing, pricing, produto e operações. O software é extremamente fácil de ser operado e fornece todas as informações que preciso para gestão dos meus websites em tempo real. Estou extremamente satisfeito e recomendo a qualquer empresa que busque alta performance com suas vendas b2C online.
                     </p>
                     <div class="client-profile-container">
-                        <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_gustavo.png?v=yay" alt="" class="client-image"/>
-                        <span class="client-name">Walt Disney
-                            <span class="client-role">CEO da Disney
+                        <img src="images/testimonials/paulo.jpeg" alt="" class="client-image" />
+                        <span class="client-name">Paulo Maiera
+                            <span class="client-role">CEO Grupo Eixo Confecções
                             </span>
                         </span>
                     </div>
                 </div>
                 <div class="testimonial">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quas sed accusantium deserunt
-                        temporibus, et facere quibusdam illo suscipit deleniti eaque mollitia ratione voluptate, saepe
-                        autem dignissimos quae id at culpa porro? A error reiciendis dolores cum consequuntur dicta
-                        quisquam?
+                        Conheci a Aion por meio do Gestão 4.0 e os contratei no início de 2021. Desde então otimizamos o retorno dos nossos investimentos em marketing, por meio de melhorias consideráveis em precificação e campanhas. Além disso, venho testemunhando uma otimização considerável de nosso estoque. Como consequência, aumentamos nossa disponibilidade de caixa para produzir melhor. A Aion traz uma metodologia completamente diferenciada em relação ao mercado e que gera impacto desde a primeira semana de trabalho. Definitivamente recomendo.
                     </p>
                     <div class="client-profile-container">
-                        <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_victor.png?v=yay" alt="" class="client-image"/>
-                        <span class="client-name">Walt Disney
-                            <span class="client-role">CEO da Disney
+                        <img src="images/testimonials/guilherme.jpeg" alt="" class="client-image" />
+                        <span class="client-name">Guilherme Donadeli
+                            <span class="client-role">CEO e sócio da Doctor Shoes
                             </span>
                         </span>
                     </div>
                 </div>
                 <div class="testimonial">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quas sed accusantium deserunt
-                        temporibus, et facere quibusdam illo suscipit deleniti eaque mollitia ratione voluptate, saepe
-                        autem dignissimos quae id at culpa porro? A error reiciendis dolores cum consequuntur dicta
-                        quisquam?
+                        Atuo no e-commerce desde 2014. Conheci a Aion por meio do curso de Digital Commerce do G 4.0 ministrado pelo Gustavo e pelo Victor e fiquei encantada com a equipe Aion. Começamos a trabalhar juntos e posso afirmar que, desde o início, o trabalho vem gerando excelentes frutos, ampliando meu conhecimento estratégico e tático de marketing online e no meu planejamento de estoque. Super recomendo!
                     </p>
                     <div class="client-profile-container">
-                        <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_pedro.png?v=yay" alt="" class="client-image"/>
-                        <span class="client-name">Walt Disney
-                            <span class="client-role">CEO da Disney
+                        <img src="images/testimonials/michelle.png" alt="" class="client-image" />
+                        <span class="client-name">Michelle Michaan Tal
+                            <span class="client-role">CEO e sócia da Momis Petit
                             </span>
                         </span>
                     </div>
@@ -159,7 +161,7 @@
             </div>
         </section>
 
-        <hr class="horizontal-line"/>
+        <hr class="horizontal-line" />
         <section>
             <div class="grid-container">
                 <h2 class="section-title">
@@ -167,24 +169,59 @@
                 </h2>
             </div>
             <div class="grid-container">
-                <div class="grid-row">
-                    <div class="partner-logo-container">
-                        <img class="partner-logo" src="https://cdn.worldvectorlogo.com/logos/vtex-1.svg" alt="" />
+                <div class="grid-row grid-row--small-gap">
+                    <div class="partner-logo-container partner-logo-container">
+                        <img class="partner-logo partner-logo--medium" src="images/Logos/vtex.png" alt="" />
                     </div>
                     <div class="partner-logo-container">
-                        <img class="partner-logo" src="https://blog2.bling.com.br/wp-content/uploads/2017/11/logo-bling-png.png" alt="" />
+                        <img class="partner-logo" src="images/Logos/bling.png" alt="" />
                     </div>
                     <div class="partner-logo-container">
-                        <img class="partner-logo " src="https://e-millennium.com.br/wp-content/uploads/2020/11/emillennium-site.png" alt="" />
+                        <img class="partner-logo" src="images/Logos/dafiti.png" alt="" />
                     </div>
                     <div class="partner-logo-container">
-                        <img class="partner-logo" src="https://cdn.freelogovectors.net/wp-content/uploads/2019/01/dafiti_logo.png" alt="" />
+                        <img class="partner-logo" src="images/Logos/netshoes.png" alt="" />
                     </div>
                     <div class="partner-logo-container">
-                        <img class="partner-logo" src="https://logodownload.org/wp-content/uploads/2020/02/netshoes-logo.png" alt="" />
+                        <img class="partner-logo" src="images/Logos/centauro.png" alt="" />
                     </div>
                     <div class="partner-logo-container">
-                        <img class="partner-logo" src="https://logodownload.org/wp-content/uploads/2017/08/centauro-logo-01.png" alt="" />
+                        <img class="partner-logo " src="images/Logos/mercado-livre.png" alt="" />
+                    </div>
+                    <!-- ------ -->
+                    <div class="partner-logo-container">
+                        <img class="partner-logo partner-logo--medium" src="images/Logos/b2w.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo" src="images/Logos/emillennium-site.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo" src="images/Logos/systextil.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo" src="images/Logos/rede.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo" src="images/Logos/stone.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo " src="images/Logos/mundipagg.png" alt="" />
+                    </div>
+                    <!-- ------ -->
+                    <div class="partner-logo-container">
+                        <img class="partner-logo" src="images/Logos/pagseguro.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo" src="images/Logos/unlimint.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo partner-logo--medium" src="images/Logos/clearsale.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo" src="images/Logos/konduto.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="partner-logo " src="images/Logos/g4.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -201,30 +238,30 @@
             </div>
 
             <div class="grid-container">
-                <div class="grid-row testimonial-container--small -spacing-top--small">
+                <div class="grid-row spacing-top--small -small-width">
                     <p class="text">
                         Nossa equipe está há mais de 10 anos trabalhando com ecommerce, operando desde empresas de baixo faturamento até empresas que faturam mais de 2 bilhões de reais por ano. E foi com a lógica do Aion que esses negócios saíram de operações deficitárias para operações lucrativas.
                     </p>
                 </div>
             </div>
             <div class="grid-container">
-                <a href="/about_us.html" class="button button--outline">
+                <a href="/sobre-nos" class="button button--outline">
                     Quem somos
                 </a>
             </div>
         </section>
 
         <!-- Module 1 -->
-        <section>
+        <section >
             <div class="grid-container">
                 <div>
                     <h2 class="section-title section-title--left-align center-on-mobile">Tenha sempre o melhor preço</h2>
                     <p class="text text--left-align -spacing-top">
-                        Com o Aion você tem um sistema inteligência de precificação, que analisa as suas vendas e seu estoque para, por meio de algorítimos, recomendar o preço ideal para cada um dos seus produtos. Além disso, você pode monitorar os seus concorrentes e saber em tempo real como o mercado está precificando.
+                        Com o Aion você tem um sistema de inteligência de precificação, que analisa as suas vendas e seu estoque para, por meio de algorítmos, recomendar o preço ideal para cada um dos seus produtos. Além disso, você pode monitorar os seus concorrentes e saber em tempo real como o mercado está precificando.
                     </p>
                 </div>
                 <div>
-                    <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_precificacao.png?v=yay" alt="" class="module-image"/>
+                    <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_precificacao.png?v=yay" alt="" class="module-image" />
                 </div>
             </div>
         </section>
@@ -239,14 +276,14 @@
                     </p>
                 </div>
                 <div>
-                    <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_produtos.png?v=yay" alt="" class="module-image"/>
+                    <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_produtos.png?v=yay" alt="" class="module-image" />
                 </div>
             </div>
         </section>
 
 
         <!-- Module 3 -->
-        <section>
+        <section >
             <div class="grid-container">
                 <div>
                     <h2 class="section-title section-title--left-align center-on-mobile">Tenha sempre os dados a seu favor</h2>
@@ -255,34 +292,116 @@
                     </p>
                 </div>
                 <div>
-                    <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_dados.png?v=yay" alt="" class="module-image"/>
+                    <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_dados.png?v=yay" alt="" class="module-image" />
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials 2 -->
+
+        <!-- <hr class="horizontal-line" /> -->
+
+        <!-- Founders -->
         <section class="-spacing-top white-background">
             <div class="grid-container">
-                <h2 class="section-title">O que nossos clientes falam sobre nós</h2>
+                <h2 class="section-title section-title--small-padding">Conheça nossos fundadores</h2>
+            </div>
+            <div class="grid-container">
+                <p class="text -spacing-bottom">
+                    Nossa equipe está desde 2012 trabalhando com e-commerce. Já criou sistemas de inteligência em enormes e-commerces, como os sites do Grupo Dafiti, que têm faturamento líquido de mais de R$ 2 bilhões por ano. E a lógica desses sistemas foi responsável pela virada (turnaround) desses negócios, que saíram de operações deficitárias para operações lucrativas. 
+                </p>
             </div>
 
-            <div class="grid-container grid-container">
-                <div class="testimonial-container--small">
-                    <div class="row">
+            <div class="grid-container grid-container--top-spacing">
+                <div class="testimonial-container">
+                    <div class="testimonial">
                         <span class="quote">‘‘</span>
-                        <p class="text text--classic text--left-align">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quas sed accusantium deserunt
-                            temporibus, et facere quibusdam illo suscipit deleniti eaque mollitia.
+                        <p class="text text--left-align">
+                            Focamos em integrar e gerar inteligência nos principais pilares estratégicos de um e-commerce porque ao longo de nossa trajetória nesse maluco mercado digital, nos deparamos TODAS as vezes com esse problema. Fomos desafiados a achar estratégia e execução assertivas para: Produto, Preço, Promoção, Praça (canal de marketing), Público, Parcerias, Ponto de armazenagem, Processo de coleta e expedição, Processo de SAC, etc. Ahh, quanto "P"! Foi justamente ao trabalhar bem um a um que nos diferenciamos.
                         </p>
                     </div>
                     <div class="client-profile-container">
-                        <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_felipe.png?v=yay" alt="" class="client-image"/>
-                        <span class="client-name">Kibe 
-                            <span class="client-role">CEO dos EUA
+                        <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_gustavo.png?v=yay" alt="" class="client-image" />
+                        <span class="client-name">Gustavo Martins<br>
+                            <span class="client-role">Co-fundador, Ex-diretor de América Latina do Grupo Dafiti
                             </span>
                         </span>
                     </div>
-                </div> 
+                </div>
+            </div>
+            
+            <div class="grid-container grid-container--top-spacing">
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <span class="quote">‘‘</span>
+                        <p class="text text--left-align">
+                            Focamos em integrar e gerar inteligência nos principais pilares estratégicos de um e-commerce porque ao longo de nossa trajetória nesse maluco mercado digital, nos deparamos TODAS as vezes com esse problema. Fomos desafiados a achar estratégia e execução assertivas para: Produto, Preço, Promoção, Praça (canal de marketing), Público, Parcerias, Ponto de armazenagem, Processo de coleta e expedição, Processo de SAC, etc. Ahh, quanto "P"! Foi justamente ao trabalhar bem um a um que nos diferenciamos.
+                        </p>
+                    </div>
+                    <div class="client-profile-container client-profile-container--reversed">
+                        <span class="client-name">Victor Meireles<br>
+                            <span class="client-role">Co-fundador, ex-gerente geral de Business Intelligence do Grupo Dafiti
+                            </span>
+                        </span>
+                        <img src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_victor.png?v=yay" alt="" class="client-image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <hr class="horizontal-line" /> -->
+
+        <section class="-spacing-bottom">
+            <div class="grid-container">
+                <h2 class="section-title">
+                    Nossos clientes
+                </h2>
+            </div>
+            <div class="grid-container">
+                <div class="grid-row grid-row--small-gap">
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/nba.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/starter.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/stance.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/ecko.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/mitchell.png" alt="" />
+                    </div>
+                    <!-- ------ -->
+                    <div class="partner-logo-container">
+                        <img class="client-logo client-logo--medium" src="images/Logos/clients/oneill.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/onbongo.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/fatal.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/tropical.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/urbane.png" alt="" />
+                    </div>
+                    <!-- ------ -->
+                    <div class="partner-logo-container">
+                        <img class="client-logo client-logo--medium" src="images/Logos/clients/doctorshoes.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo client-logo--medium" src="images/Logos/clients/momispetit.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo" src="images/Logos/clients/kypseli_white_background.png" alt="" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img class="client-logo client-logo--medium" src="images/Logos/clients/glamourbebidas.png" alt="" />
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -306,19 +425,19 @@
                     <div class="column">
                         <h2 class="section-title section-title--small section-title--padding-bottom section-title--left-align">Informações de contato</h2>
                         <form class="column" style="gap: 10px" action="https://formsubmit.co/bdcdb144d607f21eb6d40c1d7170e679" method="POST">
-                            <input type="hidden" name="_next" value="/"/>
-                            <input type="hidden" name="_captcha" value="false"/>
-                            <input type="hidden" name="_template" value="table"/>
-                            <input type="text" name="_honey" style="display:none"/>
+                            <input type="hidden" name="_next" value="/" />
+                            <input type="hidden" name="_captcha" value="false" />
+                            <input type="hidden" name="_template" value="table" />
+                            <input type="text" name="_honey" style="display:none" />
 
                             <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" placeholder="" required=""/>
+                            <input type="text" id="name" name="name" placeholder="" required="" />
 
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="" required=""/>
+                            <input type="email" id="email" name="email" placeholder="" required="" />
 
                             <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" placeholder="" style="height:100px; min-width: 100%;" required=""></textarea>
+                            <textarea id="message" name="message" placeholder="" style="height:100px; min-width: 100%; max-width: 100%; max-height: 300px;" required=""></textarea>
 
 
                             <div class="form-button-container">
@@ -336,37 +455,37 @@
         <section>
             <div class="grid-container">
                 <div id="footer-image-container">
-                    <img class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png?v=yay" alt=""/>
+                    <img class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion_black.png?v=yay" alt="" />
                 </div>
                 <div id="footer-links-container">
                     <hX>EMPRESA</hX>
                     <ul>
                         <li>
-                            <a class="-no-decoration" href="/about_us.html">
+                            <a class="-no-decoration" href="/sobre-nos">
                                 Quem Somos
                             </a>
                         </li>
                         <!-- <li>
-                            <a class="-no-decoration" href="#">
-                                Módulos
-                            </a>
-                        </li> -->
-                        <li>
-                            <a class="-no-decoration" href="#">
-                                Blog
-                            </a>
-                        </li>
+                             <a class="-no-decoration" href="#">
+                                 Módulos
+                             </a>
+                         </li> -->
+                        <!-- <li>
+                             <a class="-no-decoration" href="#">
+                                 Blog
+                             </a>
+                         </li> -->
                     </ul>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div class="grid-container">
                 <div class="social-media-container">
                     <a href="https://www.instagram.com/aionsolution/">
-                        <img class="social-media-logos" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_instagram.png?v=yay" alt="Instagram"/>
+                        <img class="social-media-logos" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_instagram.png?v=yay" alt="Instagram" />
                     </a>
                     <a href="https://www.linkedin.com/company/aionsolution/">
-                        <img class="social-media-logos" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_linkedin.png?v=yay" alt=""/>
+                        <img class="social-media-logos" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_linkedin.png?v=yay" alt="" />
                     </a>
                 </div>
             </div>
@@ -376,5 +495,7 @@
 
 
 </body>
+
+<vtex:template id="commonScripts" />
 
 </html>
