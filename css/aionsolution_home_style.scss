@@ -103,9 +103,16 @@ a.-no-decoration {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
   color: #363636;
+}
+
+h5 {
+  color: #00afe7;
 }
 
 label {
@@ -166,6 +173,10 @@ section {
 
   &--left-align {
     text-align: left;
+  }
+
+  &--align-center {
+    text-align: center;
   }
 
   &--classic {
@@ -276,7 +287,7 @@ section {
 .section-title {
   column-span: all;
   color: #363636;
-  padding: 5vh 0;
+  padding: 0 0 5vh 0;
   text-align: center;
   line-height: 1.2;
   font-weight: bold;
@@ -313,7 +324,16 @@ section {
   }
 
   &--padding-bottom {
-    padding: 0px 0px 16px 0px;
+    padding: unset unset 16px unset;
+  }
+
+  &--padding-top {
+    padding: 3rem 0px 3rem 0px;
+  }
+
+  &--small-padding-bottom {
+    // margin: 0 0 0 0;
+    padding: 0 0 1rem 0;
   }
 
 }
@@ -350,6 +370,10 @@ section {
 
   &--top-spacing {
     margin: 30px 15%;
+  }
+
+  &--col-5 {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
   }
 
 
@@ -420,13 +444,56 @@ section {
   position: absolute;
   top: -30px;
   right: 75%;
+
+  &--first {
+    right: 100%;
+  }
+
+  &--middle {
+    right: 65%;
+  }
+
+  &--last {
+    right: 31%;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .testimonial::before {
+    content: '\201c';
+    color: rgb(15, 161, 162);
+    font-size: 5rem;
+    letter-spacing: -3px;
+    margin-bottom: -60px;
+    margin-top: -40px;
+  }
+  .testimonial p::after {
+    content: '\201c';
+   
+  }
   .quote {
     right: 89%;
     top: -2px;
+
+    &--first {
+      visibility: hidden;
+      top: auto;
+      right: auto;
+    }
+  
+    &--middle {
+      visibility: hidden;
+      top: auto;
+      right: auto;
+    }
+  
+    &--last {
+      visibility: hidden;
+      top: auto;
+      right: auto;
+    }
   }
+  
 }
 
 #first-fold {
@@ -460,7 +527,7 @@ section {
   font-weight: 600;
   margin: 1rem 0px;
   text-align: left;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 0.9rem;
   color: rgb(47, 48, 52);
 
@@ -493,8 +560,8 @@ section {
   justify-content: center;
   box-sizing: border-box;
   padding: 0px 15px;
-  flex-basis: 16.666%;
-  max-width: 16.666%;
+  flex-basis: 20%;
+  max-width: 20%;
 }
 
 @media screen and (max-width: 800px) {
@@ -637,6 +704,11 @@ section {
   min-width: 300px;
   width: 80%;
 }
+
+.founder-text-container {
+  width: 160%;
+}
+
 
 @media screen and (max-width: 1100px ) {
   .founder-card {
