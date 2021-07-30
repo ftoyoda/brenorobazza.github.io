@@ -632,8 +632,8 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
-  width: 86px;
-  height: 86px;
+  width: 86px !important;
+  height: 86px !important;
   margin-right: 20px;
 }
 
