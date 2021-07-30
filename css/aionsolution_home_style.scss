@@ -297,6 +297,24 @@ section {
 
 }
 
+@media screen and (max-width: 1550px) {
+  .primary-title{
+    &--medium {
+      padding: 10vh 0 5vh 0;
+      // border: solid 1px red;
+    }
+  }
+
+  .primary-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    width: 80%;
+  }
+}
+
 .subtitle {
   text-align: center;
   font-size: 1.4rem;
