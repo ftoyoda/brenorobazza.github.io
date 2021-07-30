@@ -170,12 +170,12 @@ ul {
 }
 
 .beige-background {
-  background: rgba(0, 0, 0, 0) linear-gradient(225deg, #02568F,#4A7CC6, #328FCE, #2D9DEA) repeat scroll 0% 0% / 800% 800%;
-  animation: 20s ease 0s infinite normal none running BackgroundScroll;
-  -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;
+  background: rgba(0, 0, 0, 0) linear-gradient(225deg,#064975, #3ab0ff) repeat scroll 0% 0% / 800% 800%;
+  animation: 10s ease 0s infinite normal none running BackgroundScroll;
+  -webkit-animation: rainbow 9s ease infinite;
+  -z-animation: rainbow 9s ease infinite;
+  -o-animation: rainbow 9s ease infinite;
+  animation: rainbow 9s ease infinite;
   // background-color: #f0e1c4;
   // color: white;
 }
