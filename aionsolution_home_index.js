@@ -63,25 +63,34 @@ function swap_header_color(scrollPos) {
     return
   }
 
-  // Se for na about_us, sempre será com o conteúdo preto
-  if (window.location.href.includes("de58f908-d2ce-4fa9-b979-e66d998cf013") || window.location.href.includes("/sobre-nos")) {
-    if (scrollPos === 0) {
-      set_navigation_bar_color('transparent', 'black', 'black')
-    }
-    else {
-      set_navigation_bar_color('white', 'black', 'black')
-    }
+  if (scrollPos === 0) {
+    // set_navigation_bar_color(background_color, content_color, link_color='black')
+    set_navigation_bar_color('transparent', 'white', 'white')
+  }
+  else {
+    set_navigation_bar_color('white', 'black', 'white')
   }
 
-  // Se for na Home, dependerá da posição do scroll
-  else {
-    if (scrollPos === 0) {
-      set_navigation_bar_color('transparent', 'white', 'white')
-    }
-    else {
-      set_navigation_bar_color('white', 'black', 'black')
-    }
-  }
+  // // Se for na about_us, sempre será com o conteúdo preto
+  // if (window.location.href.includes("de58f908-d2ce-4fa9-b979-e66d998cf013") || window.location.href.includes("/sobre-nos") || window.location.href.includes("/about_us")) {
+  //   if (scrollPos === 0) {
+  //     // set_navigation_bar_color(background_color, content_color, link_color='black')
+  //     set_navigation_bar_color('transparent', 'white', 'white')
+  //   }
+  //   else {
+  //     set_navigation_bar_color('white', 'black', 'white')
+  //   }
+  // }
+
+  // // Se for na Home, dependerá da posição do scroll
+  // else {
+  //   if (scrollPos === 0) {
+  //     set_navigation_bar_color('transparent', 'white', 'white')
+  //   }
+  //   else {
+  //     set_navigation_bar_color('white', 'black', 'black')
+  //   }
+  // }
 }
 
 

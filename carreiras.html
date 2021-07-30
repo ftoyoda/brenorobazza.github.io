@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet" />
+
+
+    <!-- <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_style.css" />
+    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_navbar.css" />
+    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_buttons.css" />
+    <link rel="stylesheet" href="https://estyle.vteximg.com.br/arquivos/aionsolution_home_mobile_menu.css" />
+    <script type="text/javascript" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_index.js"></script> -->
+
+    <link rel="stylesheet" href="css/aionsolution_home_style.css" />
+    <link rel="stylesheet" href="css/aionsolution_home_navbar.css" />
+    <link rel="stylesheet" href="css/aionsolution_home_buttons.css" />
+    <link rel="stylesheet" href="css/aionsolution_home_mobile_menu.css" />
+    <script type="text/javascript" src="aionsolution_home_index.js"></script>
+    <title>Aion Solution | Trabalhe Conosco</title>
+</head>
+
+<body>
+    <div id="mobile-menu" class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li>
+                <a class="mobile-menu-link" href="/">
+                    Home
+                </a>
+            </li>
+            <hr/>
+            <li>
+                <a class="mobile-menu-link" href="/sobre-nos">
+                    Sobre nós
+                </a>
+            </li>
+            <hr/>
+            <li>
+                <a class="mobile-menu-link" href="/carreiras">
+                    Vagas
+                </a>
+            </li>
+            <hr/>
+            <li>
+                <a onclick="switchMenu()" class="mobile-menu-link" href="/#contact_us">
+                    Contato
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="navbar" class="navbar">
+        <div class="row">
+            <a class="-no-decoration" href="/">
+                Home
+            </a>
+            <a class="-no-decoration" href="/sobre-nos">
+                Quem Somos
+            </a>
+            <a class="-no-decoration" href="/carreiras">
+                Vagas
+            </a>
+        </div>
+
+        <div class="logo-container">
+            <a href="/">
+                <img id="nav-logo" class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png" alt="Aion Solution" />
+            </a>
+        </div>
+
+        <div class="row">
+            <a href="https://app.aionsolution.com.br/" class="button button--block button--no-background button--no-margin button--white-text">Login</a>
+            <a id="nav-button" href="/#contact_us" class="button button--block button--no-margin button--outline-blue">Entrar em contato</a>
+        </div>
+    </div>
+
+    <div id="mobile-navbar" class="mobile-navbar mobile-navbar">
+        <div>
+
+        </div>
+
+        <a href="/">
+            <img id="mobile-nav-logo" class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png" alt="" />
+        </a>
+
+        <div>
+            <a onclick="switchMenu()" id="hamburger-menu" style="display: inline-block; position: absolute; right: 5%; cursor: pointer;">
+                <div class="hamburger-menu-div hamburger-menu-div"></div>
+                <div class="hamburger-menu-div hamburger-menu-div"></div>
+                <div class="hamburger-menu-div hamburger-menu-div"></div>
+            </a>
+        </div>
+    </div>
+
+
+    <header class="beige-background">
+        <div id="first-fold-small" class="grid-container grid-container--vcenter">
+            <div class="primary-title-container primary-title-container--medium">
+                <h1 class="primary-title primary-title--align-center primary-title--medium">
+                    Venha trabalhar conosco
+                </h1>
+                <h2 class="subtitle">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, molestias!
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="grid-container  grid-container--vcenter grid-container--medium">
+                <div class="card card--full">
+                    <div class="column">
+                    <h2 class="section-title section-title--small section-title--padding-bottom section-title--left-align">Candidate-se preenchendo o formulário</h2>
+                    <form class="column" style="gap: 10px" action="https://formsubmit.co/contato@aionsolution.com.br" method="POST">
+                        <input type="hidden" name="_next" value="/" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_template" value="table" />
+                        <input type="text" name="_honey" style="display:none" />
+                        
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="" required="" />
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="" required="" />
+
+                        <label for="phone">Telefone</label>
+                        <input type="phone" id="phone" name="phone" placeholder="" required="" />
+
+                        <label for="university">Universidade, curso e ano</label>
+                        <input type="university" id="university" name="university" placeholder="" required="" />
+                        
+                        <label for="program">Programa</label>
+                        <select id="program" name="program" >
+                          <option value="intern">Estágio</option>
+                          <option value="trainee">Trainee</option>
+                        </select> 
+
+                        <div class="form-button-container">
+                            <button class="button button--block button--no-margin button--bold">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section>
+            <div class="grid-container">
+                <div id="footer-image-container">
+                    <img class="footer-logo" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_Logo_Aion.png?v=yay" alt="" />
+                </div>
+                <div id="footer-links-container">
+                    <hX>EMPRESA</hX>
+                    <ul>
+                        <li>
+                            <a class="-no-decoration" href="/sobre-nos">
+                                Quem Somos
+                            </a>
+                        </li>
+                        <!-- <li>
+                              <a class="-no-decoration" href="#">
+                                  Módulos
+                              </a>
+                          </li> -->
+                        <!-- <li>
+                              <a class="-no-decoration" href="#">
+                                  Blog
+                              </a>
+                          </li> -->
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="grid-container">
+                <div class="social-media-container">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/aionsolution/">
+                        <img class="social-media-logos" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_instagram.png?v=yay" alt="Instagram" />
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/aionsolution/">
+                        <img class="social-media-logos" src="https://estyle.vteximg.com.br/arquivos/aionsolution_home_linkedin.png?v=yay" alt="" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
