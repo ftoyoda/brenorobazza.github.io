@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 800px) {
   #mobile-home-button {
-    margin: 1vh 0 15vh 0;
+    margin: 8px 0 19vh 0;
     visibility: visible;
   }
   #desktop-home-button {
