@@ -35,7 +35,7 @@ $darkContrast: #303030;
 
   a {
     text-align: center;
-    color: white;
+    color: #333333;
     font-size: 16px;
   }
 
@@ -80,6 +80,10 @@ $darkContrast: #303030;
 @media screen and (max-width: 1410px) {
   .navbar {
     grid-template-columns: 1fr 3fr;
+
+    div.logo-container {
+      justify-content: left;
+    }
   }
 }
 

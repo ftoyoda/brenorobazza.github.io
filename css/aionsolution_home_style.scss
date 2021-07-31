@@ -13,10 +13,17 @@ $darkContrast: #303030;
 
 @media screen and (max-width: 800px) {
   #mobile-home-button {
+    margin: 1vh 0 15vh 0;
     visibility: visible;
   }
 
   #desktop-home-button {
+    border: solid 1px red;
+    margin: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    display: none;
     visibility: hidden;
   }
 }
@@ -164,9 +171,61 @@ ul {
   background-color: #ffffff;
 }
 
+.header-background {
+  background-image: url("/images/macbook_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  
+  h1 {
+    // font-size: ;
+    color: #333333;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-background {
+    background-image: url("/images/macbook_background_mobile.png");
+  }
+}
+
 .dark-background {
   background: radial-gradient(100% 100% at 50% 0%, #00518A 0%, #1074B0 100%);
   color: white;
+}
+
+#first-fold {
+  padding: 6.6vh 1%;
+  max-width: 1430px;
+}
+
+@media screen and (max-width: 1400px) {
+  #first-fold {
+    margin: 0 5%;
+    padding: 2vh 1%;
+    h1{
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  #first-fold {
+    padding: 12vh 0;
+  }
+}
+
+
+
+#first-fold-small {
+  padding: 2vh 5%;
+  max-width: 1430px;
+}
+
+@media screen and (max-width: 800px) {
+  #first-fold-small {
+    padding: 12vh 5%;
+    // max-width: 1430px;
+  }
 }
 
 .beige-background {
@@ -261,6 +320,9 @@ section {
     margin: 124px 200px;
   }
 
+  span {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -546,30 +608,6 @@ section {
     }
   }
   
-}
-
-#first-fold {
-  padding: 6.6vh 5%;
-  max-width: 1430px;
-}
-
-
-@media screen and (max-width: 800px) {
-  #first-fold {
-    padding: 12vh 0;
-  }
-}
-
-#first-fold-small {
-  padding: 2vh 5%;
-  max-width: 1430px;
-}
-
-@media screen and (max-width: 800px) {
-  #first-fold-small {
-    padding: 12vh 5%;
-    // max-width: 1430px;
-  }
 }
 
 .client-profile-container {
