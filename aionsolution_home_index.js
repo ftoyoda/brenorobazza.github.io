@@ -72,7 +72,7 @@ function swap_header_color(scrollPos) {
   }
 
   // Se for na about_us, sempre será com o conteúdo preto
-  if (window.location.href.includes("de58f908-d2ce-4fa9-b979-e66d998cf013") || window.location.href.includes("/sobre-nos") || window.location.href.includes("/about_us")) {
+  if (window.location.href.includes("de58f908-d2ce-4fa9-b979-e66d998cf013") || window.location.href.includes("/sobre-nos") || window.location.href.includes("/about_us") || window.location.href.includes("/carreiras")) {
     if (scrollPos === 0) {
       // set_navigation_bar_color(background_color, content_color, link_color='black')
       set_navigation_bar_color('transparent', 'white', 'white')
