@@ -4,7 +4,7 @@
   display: grid;
   overflow: hidden;
   top: 0;
-  padding: 10px 5%;
+  padding: 10px 13% 10px 8%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
