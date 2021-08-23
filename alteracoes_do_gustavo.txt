@@ -1,22 +1,19 @@
-Ajustar imagem dos clientes no safari
 [PRONTO] Jogar texto da primeria dobra para a esquerda (Diminuir a margem)
 [PRONTO] Diminuir margem do header
 [PRONTO] Fechar aspas dos clientes
 [PRONTO] Diminuir margem lateral dos módulos
 [PRONTO] Quebrar Sócios em duas colunas
-Colocar links úteis no Footer (Ver imagem)
-Colocar Insta, LinkedIn e Facebook
-Aumentar texto do botão enviar no formulário (Home e Vagas
-Colocar quote symbol nos founders
+[PRONTO] Aumentar texto do botão enviar no formulário (Home e Vagas)
+[PRONTO] Ponto final no header do Quem somos
+[PRONTO] Diminuir o height da primeira dobra do quem somos e Vagas
+[PRONTO] Trocar fundo do form de contato
+[PRONTO] Separar o "Brasil Foods"
+[PRONTO] Adicionar hiperlink no link do texto em "quem somos"
+[PRONTO] Trocar o logo por um de melhor qualidade (Gustavo vai enviar)
 
 
-Ponto final no header do Quem somos
-Diminuir o height da primeira dobra do quem somos e Vagas
-
-Trocar o logo por um de melhor qualidade (Gustavo vai enviar)
-Trocar fundo do form de contato
+Ajustar imagem dos clientes no safari
+Colocar links úteis no Footer (Pedir exemplo para o Gustavo)
+Colocar Insta, LinkedIn e Facebook no Footer
+Colocar quote symbol nos founders assim como nos testimonials
 Fonte no mobile android quebrou
-
-
-Separar o "Brasil Foods"
-Adicionar hiperlink no link do texto em "quem somos"

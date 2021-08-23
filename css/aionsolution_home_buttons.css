@@ -158,4 +158,9 @@ a.button--white-text,
 button.button--white-text {
   color: white;
 }
+
+a.button--large-text,
+button.button--large-text {
+  font-size: 1rem;
+}
 /*# sourceMappingURL=aionsolution_home_buttons.css.map */

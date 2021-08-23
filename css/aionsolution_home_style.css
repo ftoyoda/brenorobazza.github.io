@@ -192,6 +192,11 @@ ul {
   max-width: 1430px;
 }
 
+#first-fold-small-height {
+  padding: 0% 1vh 0% 0;
+  margin: 0;
+}
+
 @media screen and (max-width: 1400px) {
   #first-fold {
     margin: 0 5%;
@@ -200,26 +205,22 @@ ul {
   #first-fold h1 {
     font-size: 2rem;
   }
+  #first-fold-small-height {
+    padding: 0% 1vh 0% 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
   #first-fold {
     padding: 12vh 0;
   }
-}
-
-#first-fold-small {
-  padding: 2vh 5%;
-  max-width: 1430px;
-}
-
-@media screen and (max-width: 800px) {
-  #first-fold-small {
-    padding: 12vh 5%;
+  #first-fold-small-height {
+    margin: 0 5%;
+    padding: 12vh 0;
   }
 }
 
-.beige-background {
+.animated-background {
   background: rgba(0, 0, 0, 0) linear-gradient(225deg, #064975, #3ab0ff) repeat scroll 0% 0%/800% 800%;
   animation: 10s ease 0s infinite normal none running BackgroundScroll;
   -webkit-animation: rainbow 9s ease infinite;
